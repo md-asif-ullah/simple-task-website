@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+        include("./server/commonFile.php")
+    ?>
+
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        include("./server/header.php")
+    ?>
+    <p>hello</p>
+</body>
+</html>

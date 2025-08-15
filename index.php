@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php
-        include("./server/commonFile.php")
+        include("./client/commonFile.php")
     ?>
 
     <title>Document</title>
 </head>
 <body>
     <?php
-        include("./server/header.php")
+        include("./client/header.php")
     ?>
-    <p>hello</p>
+
+    <?php 
+    if (isset($_GET["signup"])) { 
+        include("./client/signupForm.php"); 
+    } elseif(isset($_GET["signin"])){
+        include("./client/singinForm.php");
+    }
+    ?>
+
 </body>
 </html>
